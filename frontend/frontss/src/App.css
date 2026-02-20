@@ -1,0 +1,41 @@
+.App{
+  background-color: khaki;
+  height: 100vh;
+}
+
+.topHeader{
+  margin-top: -3vh;
+  padding: auto;
+  background-color: lightblue;
+  height: 10vh;
+  text-align: center;
+  color: tomato;
+}
+
+.menuNav ul li{
+  list-style: none;
+  display: inline;
+  margin-left: 15px;
+ 
+}
+
+.menuNav ul li:hover{
+  color: tomato;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.mainSection{
+  background-color: lightgreen;
+  height: 80vh;
+  text-align: center;
+  color: blue;
+}
+
+.footer{
+  background-color: lightblue;
+  height: 10vh;
+  text-align: center;
+  color: tomato;
+}
