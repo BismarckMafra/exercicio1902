@@ -3,11 +3,6 @@ const path = require('path')
 
 const dataPath = path.join(__dirname, '../data/users.json');
 
-function saveUser(users){
-    fs.writeFileSync(dataPath, JSON.stringify(users, null, 2));
-
-}
-
 function readUsers(){
     try{
         const data = fs.readFileSync(dataPath, 'utf8')
@@ -17,7 +12,11 @@ function readUsers(){
     }   
 }
 
-module.exports = {
-    saveUser,
-    readUsers
+function saveUser(users){
+    fs.writeFileSync(dataPath, JSON.stringify(users, null, 2));
 }
+
+module.exports = {
+    saveUser, readUsers
+}
+
