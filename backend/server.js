@@ -10,8 +10,10 @@ app.use('/usuarios', userRoutes);
 
 app.listen(port, () => {
     console.log(`Server rodando em http://localhost:${port}`)
+    console.log(`Server rodando em http://localhost:${port}`)
 });
 
+app.get('/', (req, res) => {
 app.get('/', (req, res) => {
     console.log(`vc acessou a rota /`);
     res.json("Bem vindo a API de usuários");
