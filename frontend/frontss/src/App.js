@@ -8,6 +8,10 @@ import Header from './components/header/Header';
 import MainSection from './components/section/MainSection';
 import Footer from './components/footer/Footer';
 import Nav from './components/nav/MainNav';
+import SectionUser from './pages/SectionUser';
+import SectionCadastra from './pages/SectionCadastra';
+import SectionAtualiza from './pages/SectionAtualiza';
+import SectionDeleta from './pages/SectionDeleta';
 
 
 function App() {
