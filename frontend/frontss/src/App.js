@@ -21,14 +21,13 @@ function App() {
       <BrowserRouter>
       <Nav/>
       <Routes>
-        <Route path="/" element={<section />} />
+        <Route path="/" element={<MainSection />} />
         <Route path="/listar-usuarios" element={<SectionUser />} />
         <Route path="/listar-usuarios/:id" element={<SectionUser />} />
         <Route path="/cadastrar-usuario" element={<SectionCadastra />} />
         <Route path="/alterar-dados-cliente" element={<SectionAtualiza />} />
         <Route path="/deletar-usuario" element={<SectionDeleta />} />
       </Routes>
-      <MainSection />
       </BrowserRouter>
       <Footer/>
     </div>
