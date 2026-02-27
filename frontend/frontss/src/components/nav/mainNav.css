@@ -1,0 +1,20 @@
+.mainNav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(175, 182, 252, 0.945);
+    padding: 10px;
+}
+
+.mainNav ul li{
+    display: inline;
+    cursor: pointer;
+    padding: 5px;
+    gap: inherit;
+    list-style-type: none;
+}
+
+.mainNav ul li:hover{
+    color: white;
+    background-color: rgba(175, 182, 252, 0.945);
+    border-radius: 5px;
+}
