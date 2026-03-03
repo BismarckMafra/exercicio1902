@@ -27,10 +27,11 @@ function SectionUser() {
       <p>Esta página permite visualizar os usuários cadastrados.</p>
       <table>
         <thead>
-          
+          <tr>
           <th>ID</th>
           <th>Nome</th>
           <th>Sobrenome</th>
+          </tr>
         </thead>
         <tbody>
           {usuarios.map((u) => (
