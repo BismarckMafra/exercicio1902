@@ -11,11 +11,13 @@ function SectionUser() {
         const lista_de_usuarios = await listarUsuarios();
         setUsuarios(lista_de_usuarios);
         console.log(lista_de_usuarios);
+      
       } catch (error) {
         console.error("Erro ao carregar usuários:", error);
       }
     };
     carregarUsuarios();
+  
   },
     []);
 
@@ -25,22 +27,17 @@ function SectionUser() {
       <p>Esta página permite visualizar os usuários cadastrados.</p>
       <table>
         <thead>
-          <th>
-            ID
-          </th>
-          <th>
-            Nome
-          </th>
-          <th>
-            sobrenome
-          </th>
+          
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Sobrenome</th>
         </thead>
         <tbody>
-          {usuarios.map((usuario) => (
-            <tr key={usuario.id}>
-              <td>{usuario.id}</td>
-              <td>{usuario.nome}</td>
-              <td>{usuario.sobrenome}</td>
+          {usuarios.map((u) => (
+            <tr key={u.id}>
+              <td>{u.id}</td>
+              <td>{u.nome}</td>
+              <td>{u.sobrenome}</td>
             </tr>
           ))}
         </tbody>

@@ -8,7 +8,7 @@ const userRoutes = require('./routes/users.routes');
 
 
 app.use(express.json());
-app.use(cors({origin:'http://localhost:3001'}));
+app.use(cors({origin:'http://localhost:3000'}));
 app.use('/usuarios', userRoutes);
 
 app.listen(port, () => {
