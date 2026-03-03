@@ -10,16 +10,17 @@ function SectionUser() {
       try {
         const lista_de_usuarios = await listarUsuarios();
         setUsuarios(lista_de_usuarios);
+        console.log(lista_de_usuarios);
       } catch (error) {
         console.error("Erro ao carregar usuários:", error);
       }
     };
-
     carregarUsuarios();
-  }, []);
+  },
+    []);
 
   return (
-    <section className="section-user">
+    <div >
       <h2>Listar Usuários</h2>
       <p>Esta página permite visualizar os usuários cadastrados.</p>
       <table>
@@ -44,7 +45,9 @@ function SectionUser() {
           ))}
         </tbody>
       </table>
-    </section>
+    </div>
+
+
   );
 }
 
