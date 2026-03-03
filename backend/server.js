@@ -10,7 +10,6 @@ app.use('/usuarios', userRoutes);
 
 app.listen(port, () => {
     console.log(`Server rodando em http://localhost:${port}`)
-    console.log(`Server rodando em http://localhost:${port}`)
 });
 
 
